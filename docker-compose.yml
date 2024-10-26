@@ -18,8 +18,7 @@ services:
     volumes:
       - ./rails:/myapp
     ports:
-      - 3000:3000
-    depends_on:
+      - 3001:3001
       - db
     tty: true
     stdin_open: true
