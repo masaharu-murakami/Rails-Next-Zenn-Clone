@@ -18,7 +18,7 @@ services:
     volumes:
       - ./rails:/myapp
     ports:
-      - 3001:3001
+      - "3001:3001"
     depends_on:
       - db
     tty: true
@@ -32,6 +32,6 @@ services:
     volumes:
       - ./next:/app
     ports:
-      - "8000:3001"
+      - "8000:3000"
 volumes:
   mysql_data:
